@@ -25,6 +25,7 @@ public class Controller {
         List<Merchant> list=znnService.queryTest();
         mav.addObject("list",list);
         return mav;
+
     }
 
     @RequestMapping("test")
