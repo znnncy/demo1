@@ -21,11 +21,11 @@ public class Controller {
     @RequestMapping("testAll")
     @ResponseBody
     public ModelAndView testAll(){
+        //niha
         ModelAndView mav=new ModelAndView("first");
         List<Merchant> list=znnService.queryTest();
         mav.addObject("list",list);
         return mav;
-
     }
 
     @RequestMapping("test")
